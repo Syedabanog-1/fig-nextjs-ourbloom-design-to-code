@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link";
 import { HiMenu, HiX } from "react-icons/hi";
 
 const HomePage: React.FC = () => {
@@ -33,39 +34,35 @@ const HomePage: React.FC = () => {
             <ul className="flex gap-6 text-lg font-semibold">
 
               <li>
-                <a
-                  href="/"
-                  className="bg-gradient-to-r from-pink-300 to-pink-400 text-white px-4 py-2 rounded-xl shadow-lg hover:scale-105 transition"
-                >
-                  🌸 Home
-                </a>
+                <Link href="/">
+                  <span className="bg-gradient-to-r from-pink-300 to-pink-400 text-white px-4 py-2 rounded-xl shadow-lg hover:scale-105 transition block">
+                    🌸 Home
+                  </span>
+                </Link>
               </li>
 
               <li>
-                <a
-                  href="/about"
-                  className="bg-gradient-to-r from-purple-300 to-purple-400 text-white px-4 py-2 rounded-xl shadow-lg hover:scale-105 transition"
-                >
-                  💐 About
-                </a>
+                <Link href="/about">
+                  <span className="bg-gradient-to-r from-purple-300 to-purple-400 text-white px-4 py-2 rounded-xl shadow-lg hover:scale-105 transition block">
+                    💐 About
+                  </span>
+                </Link>
               </li>
 
               <li>
-                <a
-                  href="/services"
-                  className="bg-gradient-to-r from-blue-300 to-blue-400 text-white px-4 py-2 rounded-xl shadow-lg hover:scale-105 transition"
-                >
-                  🌷 Services
-                </a>
+                <Link href="/services">
+                  <span className="bg-gradient-to-r from-blue-300 to-blue-400 text-white px-4 py-2 rounded-xl shadow-lg hover:scale-105 transition block">
+                    🌷 Services
+                  </span>
+                </Link>
               </li>
 
               <li>
-                <a
-                  href="/contact"
-                  className="bg-gradient-to-r from-green-300 to-green-400 text-white px-4 py-2 rounded-xl shadow-lg hover:scale-105 transition"
-                >
-                  🌻 Contact
-                </a>
+                <Link href="/contact">
+                  <span className="bg-gradient-to-r from-green-300 to-green-400 text-white px-4 py-2 rounded-xl shadow-lg hover:scale-105 transition block">
+                    🌻 Contact
+                  </span>
+                </Link>
               </li>
 
             </ul>
@@ -78,39 +75,35 @@ const HomePage: React.FC = () => {
             <ul className="flex flex-col gap-4 text-lg font-semibold text-center">
 
               <li>
-                <a
-                  href="/"
-                  className="block bg-pink-300 text-white px-4 py-2 rounded-xl shadow hover:scale-105 transition"
-                >
-                  🌸 Home
-                </a>
+                <Link href="/">
+                  <span className="block bg-pink-300 text-white px-4 py-2 rounded-xl shadow hover:scale-105 transition">
+                    🌸 Home
+                  </span>
+                </Link>
               </li>
 
               <li>
-                <a
-                  href="/about"
-                  className="block bg-purple-300 text-white px-4 py-2 rounded-xl shadow hover:scale-105 transition"
-                >
-                  💐 About
-                </a>
+                <Link href="/about">
+                  <span className="block bg-purple-300 text-white px-4 py-2 rounded-xl shadow hover:scale-105 transition">
+                    💐 About
+                  </span>
+                </Link>
               </li>
 
               <li>
-                <a
-                  href="/services"
-                  className="block bg-blue-300 text-white px-4 py-2 rounded-xl shadow hover:scale-105 transition"
-                >
-                  🌷 Services
-                </a>
+                <Link href="/services">
+                  <span className="block bg-blue-300 text-white px-4 py-2 rounded-xl shadow hover:scale-105 transition">
+                    🌷 Services
+                  </span>
+                </Link>
               </li>
 
               <li>
-                <a
-                  href="/contact"
-                  className="block bg-green-300 text-white px-4 py-2 rounded-xl shadow hover:scale-105 transition"
-                >
-                  🌻 Contact
-                </a>
+                <Link href="/contact">
+                  <span className="block bg-green-300 text-white px-4 py-2 rounded-xl shadow hover:scale-105 transition">
+                    🌻 Contact
+                  </span>
+                </Link>
               </li>
 
             </ul>
